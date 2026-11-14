@@ -1,0 +1,25 @@
+The performance trace has been stopped.
+## Summary of Performance trace findings:
+URL: http://localhost:3018/
+Trace bounds: {min: 946472359666µs, max: 946477791066µs}
+CPU throttling: 1x
+Network throttling: none
+
+# Available insight sets
+
+The following is a list of insight sets. An insight set covers a specific part of the trace, split by navigations. The insights within each insight set are specific to that part of the trace. Be sure to consider the insight set id and bounds when calling functions. If no specific insight set or navigation is mentioned, assume the user is referring to the first one.
+
+## insight set id: NAVIGATION_0
+
+URL: http://localhost:3018/
+Bounds: {min: 946472365562µs, max: 946477791066µs}
+Metrics (lab / observed):
+  - LCP: 504 ms, event: (eventKey: r-4938, ts: 946472869822), nodeId: 72
+  - LCP breakdown:
+    - TTFB: 12 ms, bounds: {min: 946472365562µs, max: 946472377997µs}
+    - Load delay: 261 ms, bounds: {min: 946472377997µs, max: 946472638919µs}
+    - Load duration: 184 ms, bounds: {min: 946472638919µs, max: 946472822731µs}
+    - Render delay: 47 ms, bounds: {min: 946472822731µs, max: 946472869822µs}
+  - CLS: 0.00
+Metrics (field / real users): n/a – no data for this page in CrUX
+

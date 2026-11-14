@@ -1,36 +1,36 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# HOPERISING corporate website
 
-## Getting Started
+A single-page website for HOPERISING AGRO ALLIED INVESTMENT LIMITED, built with Next.js App Router, TypeScript, Tailwind CSS, Lucide and Motion.
 
-First, run the development server:
+## Development
 
-```bash
+```powershell
+npm ci
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open http://localhost:3000. To use the working review port, run `npm run dev -- --port 3017`.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Production checks
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```powershell
+npm run lint
+npm run build
+npm start
+```
 
-## Learn More
+Set `SITE_URL` to the confirmed public HTTPS origin before a deployment build. `.env.example` documents the variable. Builds without a configured domain are deliberately non-indexable review versions.
 
-To learn more about Next.js, take a look at the following resources:
+## Project files
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- `src/content/company.ts`: shared company facts, contacts and copy.
+- `src/content/site.ts`: domain validation and crawler configuration input.
+- `src/components`: page sections and shared interface components.
+- `src/app`: page composition, fonts, styles, metadata, sharing image, icon, robots and sitemap.
+- `public/images`: optimised illustrative commodity images.
+- `docs/CONTENT.md`: source-backed content and user corrections.
+- `docs/ASSETS.md`: image provenance and prompts.
+- `docs/DEPLOYMENT.md`: company review items, hosting configuration and publishing checks.
+- `docs/VERIFICATION.md`: final review results and limits.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+The four-page company profile remains in `docs`. The corrected email is `hoperisingagro@gmail.com`. Proposed mission, vision and values remain qualified until company approval. The site has not been deployed.

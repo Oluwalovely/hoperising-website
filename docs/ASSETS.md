@@ -1,0 +1,72 @@
+# Website asset record
+
+## Sharing image and temporary favicon
+
+- `src/app/opengraph-image.tsx` renders a 1200 x 630 PNG through Next.js ImageResponse using the company wordmark text, business description, incorporation year and RC number. This is a code-rendered corporate graphic, not an AI-generated photograph. A reviewed rendering is saved at `docs/audits/social-preview.png`.
+- `src/app/icon.svg` contains a typographic H in the agreed colours. It is a temporary favicon derived from the text identity, not a company-supplied official logo.
+
+## Commodities: Cashew
+
+- Website asset: `public/images/cashew-commodity.webp`.
+- Origin: built-in image generation tool, new image with no photographic input.
+- Original retained at: `C:\Users\E M M I E\.codex\generated_images\01a1d959-5c1f-7dd0-a8c1-934f110ac782\exec-9e853f0f-9977-44f1-a91c-ff0d6c8c0464.png`.
+- Optimised project version: 1280 x 960 WebP, 247,694 bytes, converted with the existing Sharp dependency.
+- Caption shared by the pair: "Illustrative commodity images."
+- Generated imagery illustrates the named commodity and does not document current company stock, premises or operations. No stock-photo licence or photographer attribution is claimed.
+
+### Final generation prompt
+
+```text
+Use case: photorealistic-natural. Asset type: illustrative cashew commodity image for a corporate agricultural trading website. One landscape 4:3 close view of raw unshelled cashew nuts with grey brown textured kidney-shaped shells piled inside an open coarse jute sack. Tightly framed from a slight overhead angle: entire frame is nuts and soft folds of burlap around lower corners, no room or premises. Natural diffused side light, warm earth tones with subtle deep olive shadows, highly realistic irregular produce textures, crisp foreground and gentle depth of field, restrained editorial agricultural commodity photography. No roasted pale kernels, no other produce, no people, hands, plants, branding, printed labels, logos, lettering, or watermark. This is a neutral illustrative scene and must not depict an identifiable company's stock.
+```
+
+
+## Commodities: Soya beans
+
+- Website asset: `public/images/soya-commodity.webp`.
+- Origin: built-in image generation tool, new image with no photographic input.
+- Original retained at: `C:\Users\E M M I E\.codex\generated_images\01a1d959-5c1f-7dd0-a8c1-934f110ac782\exec-785d9907-b825-40ac-8775-f416e9ef0faa.png`.
+- Optimised project version: 1280 x 960 WebP, 145,516 bytes, converted with the existing Sharp dependency.
+- Caption shared by the pair: "Illustrative commodity images."
+- Generated imagery illustrates the named commodity and does not document current company stock, premises or operations. No stock-photo licence or photographer attribution is claimed.
+
+### Final generation prompt
+
+```text
+Use case: photorealistic-natural. Asset type: illustrative soya bean commodity image for a corporate agricultural trading website. One landscape 4:3 close view of dry soya beans piled inside an open coarse jute sack. Botanically recognisable dry soybeans: small round to slightly oval pale straw-yellow beans with visible tiny brown elongated hila on some beans, NOT kidney beans or chickpeas. Tightly framed from a slight overhead angle: entire frame is beans and soft folds of burlap around lower corners, no room or premises. Natural diffused side light, warm earth tones with subtle deep olive shadows, highly realistic irregular produce textures, crisp foreground and gentle depth of field, restrained editorial agricultural commodity photography. No other produce, no people, hands, plants, branding, printed labels, logos, lettering, or watermark. This is a neutral illustrative scene and must not depict an identifiable company's stock.
+```
+
+
+## About: illustrative produce sacks
+
+- Website asset: `public/images/produce-sacks-about.webp`.
+- Origin: built-in image generation tool, new image with no photographic input. This is a generated illustration, not company photography.
+- Original retained at: `C:\Users\E M M I E\.codex\generated_images\01a1d959-5c1f-7dd0-a8c1-934f110ac782\exec-12f3359e-b17d-4318-aa32-02a195c475d3.png`.
+- Optimised version: 1440 x 1080 WebP, 252,502 bytes, converted using the existing Sharp dependency.
+- Purpose: a neutral produce-trading illustration. No identifiable premises, people, brands or additional named commodities are shown.
+- Visible caption: "Illustrative image. Not company premises."
+- Alternative text: "Illustration of tied woven jute produce sacks on a plain floor".
+- No stock-photo licence or photographer attribution is claimed. Company-supplied or licensed photography can replace this asset later.
+
+### Final generation prompt
+
+```text
+Use case: photorealistic-natural. Asset type: supporting illustrative image for the About section of an agricultural commodity trading company website. Landscape 4:3 editorial still life showing a small group of closed unbranded woven jute produce sacks gathered and tied with coarse rope, standing on a plain worn neutral concrete floor. Mid-distance view, three sacks in foreground with several softly out of focus behind, no identifiable building or premises. Natural window light from left, muted brown burlap with deep olive green shadows, realistic coarse weave and irregular full sack shapes, understated documentary-style commercial photography. No visible contents, no writing or labels, no logos, no people or hands, no flags, no machinery, no cultivated fields, no livestock. Do not imply any identifiable company owns the sacks. Generate one landscape image with the main sacks well framed and usable as a 4:3 website image; no text, no watermark.
+```
+
+## Hero: illustrative cashew sacks
+
+- Website asset: `public/images/cashew-hero.webp`.
+- Origin: built-in image generation tool, new image. No company or third-party photograph was used as an input.
+- Original retained at: `C:\Users\E M M I E\.codex\generated_images\01a1d959-5c1f-7dd0-a8c1-934f110ac782\exec-0732abe1-0d55-44ae-b931-ab0595284c4a.png`.
+- Optimised project version: 1440 x 1080 WebP, 331,330 bytes. Converted using the project's existing Sharp dependency.
+- Purpose: illustration of a commodity identified in the company profile. It does not document HOPERISING premises, stock, personnel or operations.
+- Visible caption: "Illustrative image. Not company premises."
+- Alternative text: "Illustration of cashew nuts in their shells in open woven produce sacks".
+- The reference image plan is real commodity photography. This generated illustration supports the first review and can be replaced with company-supplied or licensed photography. No stock-photo licence or photographer attribution is claimed for generated imagery.
+
+### Final generation prompt
+
+```text
+Use case: photorealistic-natural. Asset type: illustrative agricultural commodity image for a Nigerian produce trading company website. Create one photorealistic editorial still-life, landscape 4:3 composition, of unprocessed cashew nuts IN THEIR SHELLS filling open coarse woven jute sacks. Foreground sack clearly shows recognisable grey-brown kidney-shaped whole cashew nuts in shell; a few scattered cashew nuts in shell on a dark rough tabletop at the lower edge. Two or three softly blurred unbranded burlap produce sacks in the back, no identifiable premises. Natural side light, rich realistic coarse textures, deep olive green shadows and warm brown neutral produce colours. Restrained commercial photography, subtle natural grain, no artificial glow, no dramatic sunset. Camera at sack height, closely cropped, focus on foreground nuts and sack rim, image fills whole frame with texture, no text space necessary because website text is outside image. No people, no hands, no brands, no logos, no text, no watermarks, no leaves or crops in fields, no machinery. This is an illustrative scene, not a depiction of a real company's facilities.
+```
