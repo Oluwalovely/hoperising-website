@@ -1,8 +1,16 @@
 # HOPERISING website visual direction
 
+Audit follow-up, 16 November 2026: The primary button hover uses the named forest-hover token at the same existing colour, #24553F. The hero image uses eager loading and high request priority, while lower-page images remain lazy-loaded.
+
 Status: All requested page sections are implemented and checked in the local production review. See VERIFICATION.md for results and DEPLOYMENT.md for publication preparation.
 
 Content reference: [CONTENT.md](./CONTENT.md). Use `hoperisingagro@gmail.com` throughout the website, following the user's correction.
+
+Critique follow-up, 16 November 2026: The supplied logo is used in the header and footer. The header supporting company name uses 12px text with natural wrapping. Company Details replaces Home in primary navigation, while the logo and footer retain Home links. Commodity cards include direct email enquiry links with their names in the subject and space for quantity and location. These refinements preserve the existing colours, typefaces, section order and corporate facts; earlier temporary-wordmark references below describe the initial design stage.
+
+Polish follow-up: Commodity enquiry actions align at the bottom of each grid row. Primary navigation links have 48px hit areas and a current-section underline with `aria-current="location"`. The hero starts directly with its headline, with letter spacing adjusted to -0.035em. Paragraphs use progressive `text-wrap: pretty` for balanced endings. Corporate statements and contact information remain unchanged.
+
+Polish follow-up: Commodity enquiry links align along the bottom of each grid row. Desktop navigation has 48px hit areas and marks the current section with an underline and `aria-current="location"`. The hero starts directly with the headline; the redundant uppercase introductory label was removed, and headline tracking now matches the other headings. Paragraphs use progressive `text-wrap: pretty` for cleaner line endings. The supplied branding, palette, photographs, section order, contact details and proposed corporate statements are preserved.
 
 ## 1. Design intent
 

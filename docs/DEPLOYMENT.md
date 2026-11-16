@@ -7,7 +7,9 @@ The website is implemented locally. It has not been deployed.
 - Obtain company approval for the proposed mission, vision and core values. Their qualification remains visible in the website until approval is recorded.
 - Confirm the branch address spelling, especially "KLM, 10" and "Old Ogbomoso-Ilorin Old Road". The website preserves the profile's wording.
 - Confirm the office addresses and telephone numbers remain current. The email is `hoperisingagro@gmail.com`, following the user's correction.
-- The wordmark and H favicon are temporary text treatments. Commodity images are generated illustrations, labelled as such, rather than photographs of company premises or current stock. See ASSETS.md.
+- The supplied company logo is used in the header, footer and browser icons. The full registered name remains displayed alongside the branding.
+- Commodity and produce-sack images are generated illustrations, not photographs of company premises or current stock. Visible illustrative-image captions were removed at the user's request; provenance is recorded in ASSETS.md and the alternative text identifies the illustrations.
+- Cocoa was added at the user's request and is not named in the original profile. Confirm that it should remain in the published commodity section; its card invites enquiries without claiming stock availability.
 
 ## Domain and crawler settings
 
@@ -42,7 +44,7 @@ npm run build
 npm start
 ```
 
-For development, use `npm run dev`. Both commands use port 3000 by default. The working review server has used port 3017; the local production audit uses port 3018.
+For development, use `npm run dev`. Both commands use port 3000 by default. The working development preview uses port 3017. Local production audits have used ports 3018 and 3019; these temporary audit servers are stopped after checks.
 
 The page uses Next.js image optimisation and an hourly cached footer. Deploy with a host that runs Next.js, rather than uploading an HTML export. No database, authentication service or email credentials are required.
 

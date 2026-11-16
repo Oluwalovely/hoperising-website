@@ -1,5 +1,21 @@
 # Final website verification
 
+## Audit fixes, 16 November 2026
+
+Implemented explicit eager hero loading, corrected deployment asset guidance and extracted the existing hover colour into a theme token. Lint and production build passed. The repeated mobile lab trace measured LCP 1,120ms versus the audit baseline of 1,627ms; image load delay fell from 940ms to 90ms and CLS remained 0.00. Production checks found no preload or console warnings. Mobile and desktop Lighthouse accessibility and best-practice scores remain 100; review SEO remains 66 because no production domain is configured. Full conditions and historical findings are recorded in IMPECCABLE-AUDIT.md.
+
+## Impeccable polish follow-up, 16 November 2026
+
+- Reviewed the rendered desktop and mobile site, then aligned commodity enquiry links, enlarged navigation hit areas, added current-section indication and refined hero typography.
+- Checked 320, 375, 768, 1024, 1280 and 1440px widths with no horizontal overflow. Desktop commodity enquiry actions align on a common row; tablet cards align within each row.
+- Confirmed all five primary-navigation sections update the current link correctly. Company Details lands below the sticky header. Keyboard menu opening, Escape dismissal and focus return passed.
+- All internal anchors resolve. Three commodity-specific mailto links remain present. No messages were sent or calls placed.
+- No em dashes in rendered website text. Existing logo, commodities and exact proposed corporate statements retained.
+- Final lint and production build passed. Browser reported zero console errors; the existing development-only LCP loading advisory remains.
+- Impeccable's automated detector and critique storage remain unavailable because its engine is not installed and its cache directory could not be created. This was a manual visual and browser verification, not an automated Impeccable scan. No stored critique snapshot was read or closed.
+
+The original production review below records the earlier 14 November checks.
+
 Reviewed on 14 November 2026 against the production build served locally at http://localhost:3018. The development preview is available on port 3017 while its server is running. The website has not been deployed.
 
 ## Result

@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { ArrowUpRight } from "lucide-react";
-import { commodities, commoditySection } from "@/content/company";
+import { commodities, commoditySection, company } from "@/content/company";
 import { Reveal } from "./reveal";
 
 export function Commodities() {
@@ -26,8 +26,8 @@ export function Commodities() {
 
       <div className="mt-10 grid gap-9 md:grid-cols-2 md:gap-8 lg:mt-12 lg:grid-cols-3 lg:gap-10">
         {[cashew, soya, cocoa].map((commodity) => (
-          <article key={commodity.name}>
-            <div className="relative aspect-[4/3] overflow-hidden bg-forest/10">
+          <article key={commodity.name} className="flex flex-col items-start">
+            <div className="relative aspect-[4/3] w-full shrink-0 overflow-hidden bg-forest/10">
               <Image
                 src={commodity.image}
                 alt={commodity.imageAlt}
@@ -42,6 +42,13 @@ export function Commodities() {
             <p className="mt-3 max-w-lg text-base leading-relaxed text-muted">
               {commodity.description}
             </p>
+            <a
+              href={`${company.emailHref}?subject=${encodeURIComponent(`${commodity.name} enquiry`)}&body=${encodeURIComponent(`Hello Hoperising,\n\nI would like to enquire about ${commodity.name.toLowerCase()}.\n\nApproximate quantity:\nLocation:\n\n`)}`}
+              className="mt-auto inline-flex min-h-12 items-center gap-2 pt-5 pb-2 text-base font-medium text-forest underline decoration-forest/35 underline-offset-6 hover:decoration-forest"
+            >
+              Enquire about {commodity.name.toLowerCase()}
+              <ArrowUpRight size={17} strokeWidth={1.6} aria-hidden="true" />
+            </a>
           </article>
         ))}
       </div>

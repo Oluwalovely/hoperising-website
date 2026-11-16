@@ -16,6 +16,7 @@
 
 @theme {
   --color-forest: #183f32;
+  --color-forest-hover: #24553f;
   --color-ivory: #f7f5ef;
   --color-gold: #c5a36a;
   --color-charcoal: #252a27;
@@ -44,6 +45,10 @@
     font-weight: 600;
     line-height: 1.15;
     text-wrap: balance;
+  }
+
+  p {
+    text-wrap: pretty;
   }
 
   :focus-visible {
@@ -105,11 +110,15 @@
     transition: background-color 160ms ease, transform 160ms ease;
   }
 
-  .button-primary:hover { background: #24553f; }
+  .button-primary:hover { background: var(--color-forest-hover); }
   .button-primary:focus-visible { outline-color: var(--color-forest); }
   .button-primary:active { transform: translateY(1px); }
   .nav-link { text-underline-offset: 7px; }
   .nav-link:hover { text-decoration: underline; }
+  .nav-link[aria-current="location"] {
+    text-decoration-line: underline;
+    text-decoration-thickness: 2px;
+  }
 
   .skip-link {
     position: fixed;

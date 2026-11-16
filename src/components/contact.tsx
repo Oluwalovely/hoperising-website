@@ -21,6 +21,9 @@ export function Contact() {
           <p className="mt-5 max-w-xl text-base leading-relaxed text-muted sm:text-[17px]">
             {contact.introduction}
           </p>
+          <p className="mt-3 max-w-xl text-base leading-relaxed text-muted">
+            {contact.enquiryGuidance}
+          </p>
         </Reveal>
 
         <div className="mt-10 grid gap-10 lg:mt-12 lg:grid-cols-[1fr_1.4fr] lg:gap-16">
