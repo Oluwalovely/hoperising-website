@@ -72,6 +72,10 @@ Review-stage note for this section: **Proposed corporate statements, subject to 
 
 Unless explicitly quoted above, the text below is proposed editorial copy derived from the profile. Headings and calls to action are website language, not quotations or additional factual claims.
 
+Copy review, 16 November 2026: The current website wording is in `src/content/company.ts`. The editorial drafts below record the earlier content stage. The website copy now uses shorter, more direct sentences, including "sources, purchases and supplies agricultural produce" in the hero and "call or email us" in the contact section. Company facts and the exact proposed mission, vision and values are unchanged. No em dashes are used in the website source.
+
+User update, 16 November 2026: Added a cocoa image and enquiry card at the user's request. Cocoa is a user-requested addition, not a commodity named in the original PDF. The card invites enquiries without claiming current stock. Removed the visible illustrative-image captions at the user's request. Image provenance remains recorded in ASSETS.md, and generated-image descriptions remain in alternative text.
+
 ### A. Header and navigation
 
 - Temporary text wordmark: **HOPERISING**, with **AGRO ALLIED INVESTMENT LIMITED** as its supporting line.

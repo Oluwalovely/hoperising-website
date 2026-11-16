@@ -1,5 +1,32 @@
 # Website asset record
 
+## Logo favicon update, 16 November 2026
+
+- Replaced the temporary `H` SVG favicon with icons converted from the user-supplied logo, preserving the full artwork and proportions.
+- `src/app/favicon.ico` contains 16, 32, 48 and 64 pixel PNG frames for browser tabs.
+- `src/app/icon.png` is a transparent 192 x 192 PNG. `src/app/apple-icon.png` is a 180 x 180 PNG with an ivory background for Apple home screens.
+- Next.js supplies icon metadata through its file conventions. Earlier references below to the temporary favicon describe the initial review version.
+
+## Cocoa and caption update, 16 November 2026
+
+- Cocoa was added at the user's request. The original PDF does not name cocoa; the website card invites enquiries without claiming stock availability.
+- Asset: `public/images/cocoa-commodity.webp`, 1280 x 960 WebP, generated using the built-in image generation tool and optimised with Sharp.
+- Original: `C:\Users\E M M I E\.codex\generated_images\01a1d959-5c1f-7dd0-a8c1-934f110ac782\exec-d3f895da-b1a6-4d8f-8cac-d993eb93191e.png`.
+- The user requested removal of visible illustrative-image captions. Those captions have been removed from the hero, About and commodity sections. Earlier caption records below describe the initial review version. Alternative text still describes generated illustrations, and no image is labelled as company stock or premises.
+
+### Cocoa generation prompt
+
+```text
+Create one landscape 4:3 photorealistic editorial commodity still life for a restrained Nigerian agricultural trading corporate website. Close view of dry fermented brown cocoa beans filling an open coarse woven jute sack, with a few cocoa beans resting on plain dark neutral wood at its base. Natural soft side lighting, muted warm browns and subtle olive background, realistic textures, focus on the beans and sack rim with softly blurred unbranded sacks behind. Match understated premium commodity photography. No cocoa powder, no coffee beans, no chocolate products, no text, no logos, no people, no machinery, no identifiable company premises. This is a generated commodity illustration, not a record of a company's inventory or operations.
+```
+
+## User-supplied company logo
+
+- Asset: `public/images/hoperising_logo_transparent_512.webp`, a 512 x 512 transparent WebP supplied by the user.
+- Used in the header and footer without cropping, recolouring or altering the artwork. The footer uses an ivory backing to keep the logo readable.
+- The full registered company name remains displayed alongside the header logo and below the footer logo.
+- The temporary favicon and text-based sharing image remain separate assets.
+
 ## Sharing image and temporary favicon
 
 - `src/app/opengraph-image.tsx` renders a 1200 x 630 PNG through Next.js ImageResponse using the company wordmark text, business description, incorporation year and RC number. This is a code-rendered corporate graphic, not an AI-generated photograph. A reviewed rendering is saved at `docs/audits/social-preview.png`.

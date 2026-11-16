@@ -1,5 +1,6 @@
 import { cacheLife } from "next/cache";
 import { company, footerNavigation } from "@/content/company";
+import { CompanyLogo } from "./brand";
 
 export async function Footer() {
   "use cache";
@@ -12,6 +13,9 @@ export async function Footer() {
       <div className="page-container pt-12 pb-7 lg:pt-16">
         <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-[1.3fr_1fr_1fr] lg:gap-14">
           <div>
+            <a href="#home" aria-label={`${company.name} home`} className="mb-5 inline-flex bg-ivory p-2">
+              <CompanyLogo className="w-24 md:w-28" />
+            </a>
             <p className="max-w-sm font-heading text-xl leading-relaxed font-semibold tracking-[0.01em]">
               {company.name}
             </p>

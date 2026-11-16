@@ -4,7 +4,7 @@ import { commodities, commoditySection } from "@/content/company";
 import { Reveal } from "./reveal";
 
 export function Commodities() {
-  const [cashew, soya, otherProduce] = commodities;
+  const [cashew, soya, cocoa, otherProduce] = commodities;
 
   return (
     <section
@@ -24,15 +24,15 @@ export function Commodities() {
         </p>
       </Reveal>
 
-      <div className="mt-10 grid gap-9 md:grid-cols-2 md:gap-8 lg:mt-12 lg:gap-10">
-        {[cashew, soya].map((commodity) => (
+      <div className="mt-10 grid gap-9 md:grid-cols-2 md:gap-8 lg:mt-12 lg:grid-cols-3 lg:gap-10">
+        {[cashew, soya, cocoa].map((commodity) => (
           <article key={commodity.name}>
             <div className="relative aspect-[4/3] overflow-hidden bg-forest/10">
               <Image
                 src={commodity.image}
                 alt={commodity.imageAlt}
                 fill
-                sizes="(max-width: 767px) calc(100vw - 40px), (max-width: 1335px) 45vw, 600px"
+                sizes="(max-width: 767px) calc(100vw - 40px), (max-width: 1023px) 45vw, (max-width: 1335px) 30vw, 387px"
                 className="object-cover"
               />
             </div>
@@ -45,9 +45,6 @@ export function Commodities() {
           </article>
         ))}
       </div>
-      <p className="mt-6 text-[12px] leading-relaxed text-muted">
-        {commoditySection.imageCaption}
-      </p>
 
       <div className="mt-10 flex flex-col items-start justify-between gap-6 border-t border-rule pt-8 md:flex-row md:items-center md:gap-10">
         <div className="max-w-xl">

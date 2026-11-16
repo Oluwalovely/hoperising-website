@@ -47,9 +47,6 @@ export function About() {
                 className="object-cover"
               />
             </div>
-            <figcaption className="mt-3 text-[12px] leading-relaxed text-muted">
-              Illustrative image. Not company premises.
-            </figcaption>
           </figure>
         </div>
       </div>

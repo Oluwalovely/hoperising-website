@@ -67,7 +67,7 @@ export const navigation = [
 export const hero = {
   eyebrow: "Agricultural commodity sourcing and trading",
   heading: "Connecting Agricultural Produce with Market Opportunities.",
-  description: `${company.name} is a Nigerian agricultural commodity trading company engaged in the sourcing, procurement and supply of farm produce.`,
+  description: `${company.name} is a Nigerian company that sources, purchases and supplies agricultural produce.`,
   primaryAction: { label: "Explore Our Business", href: "#business" },
   secondaryAction: { label: "Contact Us", href: "#contact" },
 } as const;
@@ -76,7 +76,7 @@ export const about = {
   heading: "A Nigerian company focused on agricultural trade.",
   introduction: `Established on ${company.incorporationDate}, ${company.name} is a private company limited by shares, registered in Nigeria.`,
   description:
-    "The company purchases agricultural produce for onward sale to customers, traders and businesses. Its role is to connect sources of farm produce with buyers through sourcing, purchasing and supply.",
+    "We buy agricultural produce from farmers and suppliers for resale to traders, businesses and other buyers. Cashew and soya beans are among the commodities we trade.",
   facts: [
     { label: "Incorporated", value: String(company.incorporationYear) },
     { label: "RC number", value: company.registrationNumber },
@@ -87,7 +87,7 @@ export const about = {
 export const business = {
   heading: "Our Business",
   introduction:
-    "From sourcing produce to supplying buyers, our business centres on agricultural commodities.",
+    "We source, buy and resell agricultural produce, with importation where applicable.",
 } as const;
 
 type BusinessActivity = {
@@ -100,36 +100,42 @@ export const businessActivities = [
   {
     id: "sourcing",
     title: "Agricultural Produce Sourcing & Procurement",
-    description: "Purchasing farm produce from farmers, suppliers and other produce sources, including cashew, soya beans and other available agricultural commodities.",
+    description: "We source and purchase cashew, soya beans and other available farm produce from farmers and suppliers.",
   },
   {
     id: "trading",
     title: "Agricultural Commodity Trading & Supply",
-    description: "Reselling and supplying purchased produce to customers, traders, businesses and other buyers.",
+    description: "We resell the produce we purchase, supplying traders, businesses and other customers.",
   },
   {
     id: "importation",
     title: "Agricultural Produce Importation",
-    description: "Importation of agricultural produce, where applicable, as part of the company's produce-trading activities.",
+    description: "Our business activities also include importing agricultural produce, where applicable.",
   },
 ] as const satisfies readonly BusinessActivity[];
 
 export const commodities = [
   {
     name: "Cashew",
-    description: "Sourced and purchased for onward sale to buyers.",
+    description: "We source and purchase cashew for resale to buyers.",
     image: "/images/cashew-commodity.webp",
     imageAlt: "Illustration of unshelled cashew nuts in an open jute sack",
   },
   {
     name: "Soya beans",
-    description: "Purchased for resale and supply to customers and businesses.",
+    description: "We buy soya beans for supply to customers and businesses.",
     image: "/images/soya-commodity.webp",
     imageAlt: "Illustration of dry soya beans in an open jute sack",
   },
   {
+    name: "Cocoa",
+    description: "Contact us to discuss cocoa sourcing and availability.",
+    image: "/images/cocoa-commodity.webp",
+    imageAlt: "Illustration of dried cocoa beans in an open jute sack",
+  },
+  {
     name: "Other available agricultural produce",
-    description: "Other farm produce may form part of the company's trading activities, depending on availability.",
+    description: "We also trade other farm produce, depending on what is available. Contact us to discuss your requirements.",
   },
 ] as const;
 
@@ -137,32 +143,31 @@ export const commoditySection = {
   heading: "Agricultural Commodities",
   introduction:
     "We source and trade cashew, soya beans and other available farm produce.",
-  imageCaption: "Illustrative commodity images.",
   action: { label: "Enquire About Produce", href: "#contact" },
 } as const;
 
 export const approach = {
   heading: "From Produce Sources to Buyers",
   introduction:
-    "Our trading model centres on finding agricultural produce, purchasing suitable commodities and supplying them to buyers.",
+    "Our trade begins with finding produce sources and continues through purchase and supply to buyers.",
 } as const;
 
 export const tradingSteps = [
   {
     title: "Identify produce sources",
-    description: "Identify farmers, suppliers and other sources of agricultural produce.",
+    description: "Find farmers, suppliers and other sources of farm produce.",
   },
   {
     title: "Source suitable commodities",
-    description: "Source agricultural commodities suitable for purchase and onward sale.",
+    description: "Identify agricultural produce suitable for purchase and resale.",
   },
   {
     title: "Purchase available produce",
-    description: "Purchase available produce as part of the company's trading activities.",
+    description: "Buy available produce from the identified sources.",
   },
   {
     title: "Supply buyers",
-    description: "Resell and supply purchased produce to customers, traders and businesses.",
+    description: "Sell and supply the purchased produce to traders, businesses and other customers.",
   },
 ] as const;
 
@@ -189,7 +194,7 @@ export const pageMetadata = {
 export const corporateInfo = {
   heading: "Corporate Information",
   introduction:
-    "Company particulars and office locations, as recorded in the company profile.",
+    "Our registration details and office addresses, as recorded in the company profile.",
   details: [
     { label: "Registered company name", value: company.name },
     { label: "RC registration number", value: company.registrationNumber },
@@ -202,7 +207,7 @@ export const corporateInfo = {
 export const contact = {
   heading: "Get in Touch",
   introduction:
-    "For enquiries about agricultural produce sourcing, purchasing or supply, contact the company using the details below.",
+    "To discuss sourcing, purchasing or supplying agricultural produce, call or email us using the details below.",
 } as const;
 
 export const footerNavigation = [

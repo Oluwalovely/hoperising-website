@@ -8,8 +8,7 @@ export function Hero() {
     <section aria-labelledby="hero-heading" className="page-container pt-11 pb-12 md:pt-14 md:pb-16 lg:pt-16 lg:pb-20">
       <div className="grid items-center gap-10 lg:grid-cols-[1.08fr_1fr] lg:gap-12 xl:gap-16">
         <Reveal>
-          <p className="mb-6 flex items-center gap-3 text-[12px] leading-relaxed font-medium tracking-[0.1em] text-forest uppercase sm:text-[13px]">
-            <span className="h-px w-7 shrink-0 bg-gold" aria-hidden="true" />
+          <p className="mb-6 text-[12px] leading-relaxed font-medium tracking-[0.1em] text-forest uppercase sm:text-[13px]">
             {hero.eyebrow}
           </p>
           <h1 id="hero-heading" className="max-w-[650px] text-[35px] leading-[1.12] tracking-[-0.045em] text-forest sm:text-[52px] lg:text-[52px] xl:text-[61px]">
@@ -41,7 +40,6 @@ export function Hero() {
               className="object-cover"
             />
           </div>
-          <figcaption className="mt-3 text-[12px] leading-relaxed text-muted">Illustrative image. Not company premises.</figcaption>
         </figure>
       </div>
     </section>
