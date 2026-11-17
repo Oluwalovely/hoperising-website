@@ -1,5 +1,13 @@
 # Website asset record
 
+## Client cashew and additional soya bean photographs, 17 November 2026
+
+- Converted three new client JPEGs to WebP using Sharp, automatic orientation and quality 82. Original JPEGs are retained and dimensions are unchanged.
+- `cashew.webp`: 728 x 1280, 180,744 bytes (JPEG: 197,901 bytes). Replaces the generated cashew illustration in the commodity card.
+- `cashew_bags.webp`: 1170 x 1085, 67,688 bytes (JPEG: 103,370 bytes). Paired with the cashew workspace photograph.
+- `soyabeans2.webp`: 598 x 1169, 95,252 bytes (JPEG: 117,968 bytes). Added alongside the existing client soya bean photograph.
+- All four commodity cards now use client photographs. The hero retains its existing cashew illustration, and other sections are unchanged by this asset update.
+
 ## Approved hero composition, 17 November 2026
 
 - The hero now pairs the existing generated `cashew-hero.webp` with the client's `workplace2.webp` in a smaller supporting frame. No new imagery was generated.

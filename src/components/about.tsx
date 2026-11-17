@@ -26,11 +26,11 @@ export function About() {
                 {about.description}
               </p>
             </Reveal>
-            <dl className="mt-8 grid grid-cols-2 gap-x-6 gap-y-6 border-t border-rule pt-6 sm:grid-cols-3 lg:gap-x-4">
+            <dl className="mt-8 grid grid-cols-3 gap-x-3 gap-y-6 border-t border-rule pt-6 sm:gap-x-6 lg:gap-x-4">
               {about.facts.map((fact) => (
                 <div key={fact.label}>
-                  <dt className="text-[13px] text-muted">{fact.label}</dt>
-                  <dd className="mt-1 font-heading text-[22px] font-semibold tracking-[-0.025em] text-forest">
+                  <dt className="text-xs text-muted sm:text-[13px]">{fact.label}</dt>
+                  <dd className="mt-1 font-heading text-lg font-semibold tracking-[-0.025em] text-forest sm:text-[22px]">
                     {fact.value}
                   </dd>
                 </div>

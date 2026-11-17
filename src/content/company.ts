@@ -116,14 +116,18 @@ export const commodities = [
   {
     name: "Cashew",
     description: "Sourced and purchased for resale.",
-    image: "/images/cashew-commodity.webp",
-    imageAlt: "Illustration of unshelled cashew nuts in an open jute sack",
+    image: "/images/cashew.webp",
+    imageAlt: "Cashew nuts in their shells spread across the outdoor workspace",
+    supportingImage: "/images/cashew_bags.webp",
+    supportingImageAlt: "Two filled cashew sacks beside produce laid out at the workspace",
   },
   {
     name: "Soya beans",
     description: "Purchased for supply to buyers.",
     image: "/images/soyabeans.webp",
     imageAlt: "A handful of soya beans held above an open produce sack",
+    supportingImage: "/images/soyabeans2.webp",
+    supportingImageAlt: "Open white sacks filled with soya beans",
   },
   {
     name: "Cocoa",

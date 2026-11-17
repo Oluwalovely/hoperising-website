@@ -28,7 +28,7 @@ export function TradingApproach() {
               className="relative grid grid-cols-[40px_1fr] gap-x-5 pb-8 last:pb-0 lg:block lg:pr-8 lg:pb-0 lg:last:pr-0"
             >
               {index < tradingSteps.length - 1 && (
-                <span aria-hidden="true" className="absolute top-10 bottom-2 left-[14px] w-px bg-rule lg:top-[16px] lg:right-3 lg:bottom-auto lg:left-11 lg:h-px lg:w-auto" />
+                <span aria-hidden="true" className="absolute top-4 right-3 left-11 hidden h-px bg-rule lg:block" />
               )}
               <span aria-hidden="true" className="font-heading text-[24px] leading-8 font-semibold tracking-[-0.03em] text-forest">
                 {String(index + 1).padStart(2, "0")}

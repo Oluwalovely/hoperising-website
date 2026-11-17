@@ -24,7 +24,7 @@ export function Commodities() {
         </p>
       </Reveal>
 
-      <div className="mt-10 grid gap-9 md:grid-cols-2 md:gap-8 lg:mt-12 xl:grid-cols-4">
+      <div className="mt-10 grid gap-x-8 gap-y-12 md:grid-cols-2 lg:mt-12 lg:gap-y-16">
         {[cashew, soya, cocoa, sesame].map((commodity) => (
           <article key={commodity.name} className="flex flex-col items-start">
             <div className="relative aspect-[4/3] w-full shrink-0 overflow-hidden bg-forest/10">
@@ -37,8 +37,8 @@ export function Commodities() {
                     alt={commodity.imageAlt}
                     fill
                     sizes={"supportingImage" in commodity
-                      ? "(max-width: 767px) 52vw, (max-width: 1279px) 25vw, 159px"
-                      : "(max-width: 767px) calc(100vw - 40px), (max-width: 1279px) 45vw, (max-width: 1335px) 22vw, 286px"}
+                      ? "(max-width: 767px) 52vw, (max-width: 1335px) 25vw, 336px"
+                      : "(max-width: 767px) calc(100vw - 40px), (max-width: 1335px) 45vw, 604px"}
                     className="object-cover"
                   />
                 </div>
@@ -48,7 +48,7 @@ export function Commodities() {
                       src={commodity.supportingImage}
                       alt={commodity.supportingImageAlt}
                       fill
-                      sizes="(max-width: 767px) 42vw, (max-width: 1279px) 20vw, 127px"
+                      sizes="(max-width: 767px) 42vw, (max-width: 1335px) 20vw, 264px"
                       className="object-cover"
                     />
                   </div>
