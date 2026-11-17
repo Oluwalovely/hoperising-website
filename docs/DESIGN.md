@@ -1,5 +1,9 @@
 # HOPERISING website visual direction
 
+Mobile hero follow-up: Below 640px the headline uses 32px type with natural line wrapping, reduced text spacing and two adjacent actions with 48px touch targets. At the user's request, the cashew photograph now fills the hero background beneath an 80% forest-green overlay, with brighter supporting text for readability. The background stays still while the text retains reduced-motion-aware entrance behavior. The supporting workspace image appears from 640px upward and remains available in About on phones. Desktop retains the split composition.
+
+Hero update, 17 November 2026: Implemented the approved Impeccable bolder direction within the hero only. Forest green carries the full section, with ivory headline text and an ivory primary action. The original headline remains; the introduction now reads "We source, purchase and supply agricultural produce in Nigeria." The asymmetric desktop grid pairs a wider text column with cashew imagery extending to the viewport's right edge. A smaller client workspace photograph shows a truck and produce sacks. Mobile places the text and actions before the photographs. Both images use the existing reduced-motion-aware Reveal component, and the main cashew image retains eager loading and high fetch priority. Earlier hero layout descriptions below record the original direction.
+
 Audit follow-up, 16 November 2026: The primary button hover uses the named forest-hover token at the same existing colour, #24553F. The hero image uses eager loading and high request priority, while lower-page images remain lazy-loaded.
 
 Status: All requested page sections are implemented and checked in the local production review. See VERIFICATION.md for results and DEPLOYMENT.md for publication preparation.

@@ -60,13 +60,12 @@ export const navigation = [
   { label: "About Us", href: "#about" },
   { label: "Our Business", href: "#business" },
   { label: "Our Approach", href: "#approach" },
-  { label: "Company Details", href: "#corporate-information" },
   { label: "Contact", href: "#contact" },
 ] as const satisfies readonly { label: string; href: `#${string}` }[];
 
 export const hero = {
   heading: "Connecting Agricultural Produce with Market Opportunities.",
-  description: `${company.name} is a Nigerian company that sources, purchases and supplies agricultural produce.`,
+  description: "We source, purchase and supply agricultural produce in Nigeria.",
   primaryAction: { label: "Explore Our Business", href: "#business" },
   secondaryAction: { label: "Contact Us", href: "#contact" },
 } as const;
@@ -123,14 +122,24 @@ export const commodities = [
   {
     name: "Soya beans",
     description: "Purchased for supply to buyers.",
-    image: "/images/soya-commodity.webp",
-    imageAlt: "Illustration of dry soya beans in an open jute sack",
+    image: "/images/soyabeans.webp",
+    imageAlt: "A handful of soya beans held above an open produce sack",
   },
   {
     name: "Cocoa",
     description: "Contact us to discuss cocoa sourcing and availability.",
-    image: "/images/cocoa-commodity.webp",
-    imageAlt: "Illustration of dried cocoa beans in an open jute sack",
+    image: "/images/cocoa_seed.webp",
+    imageAlt: "Cocoa beans spread out on a surface beside a filled bowl",
+    supportingImage: "/images/cocoa_bags.webp",
+    supportingImageAlt: "Stacked sacks of cocoa beans in a storage building",
+  },
+  {
+    name: "Sesame seeds",
+    description: "Contact us about sourcing sesame seeds and current availability.",
+    image: "/images/sesame_seed.webp",
+    imageAlt: "Close view of pale sesame seeds",
+    supportingImage: "/images/sesame_seed_bags.webp",
+    supportingImageAlt: "Stacked bags of sesame seeds at the workspace",
   },
   {
     name: "Other available agricultural produce",
@@ -188,19 +197,6 @@ export const corporateStatements = {
 export const pageMetadata = {
   title: `${company.name} | Agricultural Commodity Trading`,
   description: `${company.name} is a Nigerian company focused on sourcing, purchasing and supplying cashew, soya beans and other agricultural produce.`,
-} as const;
-
-export const corporateInfo = {
-  heading: "Corporate Information",
-  introduction:
-    "Our registration details and office addresses, as recorded in the company profile.",
-  details: [
-    { label: "Registered company name", value: company.name },
-    { label: "RC registration number", value: company.registrationNumber },
-    { label: "Date of incorporation", value: company.incorporationDate },
-    { label: "Company type", value: company.companyType },
-    { label: "Country", value: company.country },
-  ],
 } as const;
 
 export const contact = {

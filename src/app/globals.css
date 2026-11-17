@@ -92,6 +92,31 @@
 }
 
 @layer components {
+  .hero-section ::selection {
+    background: var(--color-ivory);
+    color: var(--color-forest);
+  }
+
+  .hero-action:focus-visible { outline-color: var(--color-ivory); }
+
+  @media (width < 40rem) {
+    .hero-media[data-reveal="true"] { animation: none; }
+  }
+
+  @media (min-width: 40rem) {
+    .hero-media { margin-right: -1.25rem; }
+  }
+
+  @media (min-width: 48rem) {
+    .hero-media { margin-right: -2rem; }
+  }
+
+  @media (min-width: 64rem) {
+    .hero-media {
+      margin-right: calc(-3rem - (100vw - min(100vw, 83.5rem)) / 2);
+    }
+  }
+
   .button-primary {
     display: inline-flex;
     min-height: 3rem;

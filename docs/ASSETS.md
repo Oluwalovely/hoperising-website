@@ -1,5 +1,32 @@
 # Website asset record
 
+## Approved hero composition, 17 November 2026
+
+- The hero now pairs the existing generated `cashew-hero.webp` with the client's `workplace2.webp` in a smaller supporting frame. No new imagery was generated.
+- The main image remains an illustrative commodity scene, and its alternative text retains that distinction. The workspace image shows the actual truck and produce sacks supplied by the client.
+- Responsive CSS crops the workspace photograph toward its lower portion without altering the retained source files.
+
+## Client cocoa and soya bean photographs, 17 November 2026
+
+- Converted the three additional client JPEGs to WebP using Sharp, automatic orientation and quality 82. Original JPEGs are retained and dimensions are unchanged.
+- `cocoa_seed.webp`: 811 x 892, 191,484 bytes (JPEG: 211,028 bytes).
+- `cocoa_bags.webp`: 869 x 985, 83,758 bytes (JPEG: 118,856 bytes).
+- `soyabeans.webp`: 892 x 1280, 98,944 bytes (JPEG: 138,399 bytes).
+- The cocoa card now pairs the actual beans and bag photographs. The soya bean card uses the client's sack and handful photograph. These replace the generated commodity illustrations in those cards; earlier assets remain on disk for reference.
+- Cashew, sesame, workspace and hero imagery are unchanged. The proposed hero redesign has not been implemented.
+
+## Client photographs and sesame seeds, 17 November 2026
+
+- The user supplied four JPEG photographs and identified sesame seeds as an additional commodity. This update supplements the original profile rather than attributing sesame to that document.
+- Converted all four to WebP with Sharp, automatic orientation and quality 82, preserving their dimensions and retaining the original JPEG files.
+- `sesame_seed.webp`: 843 x 1225, 107,778 bytes (JPEG: 152,878 bytes). Used in the new sesame seeds commodity card.
+- `sesame_seed_bags.webp`: 640 x 1280, 22,872 bytes (JPEG: 45,064 bytes). Used beside the seed close-up in the same card.
+- `workplace.webp`: 730 x 1280, 190,212 bytes (JPEG: 212,706 bytes).
+- `workplace2.webp`: 1170 x 1207, 58,668 bytes (JPEG: 98,436 bytes).
+- Both workspace photos now appear in About, replacing the generated produce-sack illustration. That earlier asset remains on disk for reference.
+- Cashew, soya bean, cocoa and hero images are unchanged. No visible illustrative-image captions have been added.
+- The sesame description invites enquiries and does not promise stock, quantities, grades or delivery.
+
 ## Logo favicon update, 16 November 2026
 
 - Replaced the temporary `H` SVG favicon with icons converted from the user-supplied logo, preserving the full artwork and proportions.

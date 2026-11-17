@@ -38,14 +38,25 @@ export function About() {
             </dl>
           </div>
           <figure className="min-w-0 lg:order-1">
-            <div className="relative aspect-[4/3] overflow-hidden bg-forest/10">
-              <Image
-                src="/images/produce-sacks-about.webp"
-                alt="Illustration of tied woven jute produce sacks on a plain floor"
-                fill
-                sizes="(max-width: 767px) calc(100vw - 40px), (max-width: 1023px) calc(100vw - 64px), (max-width: 1335px) 43vw, 550px"
-                className="object-cover"
-              />
+            <div className="grid aspect-[4/3] grid-cols-2 gap-3 sm:gap-4">
+              <div className="relative overflow-hidden bg-forest/10">
+                <Image
+                  src="/images/workplace.webp"
+                  alt="Hoperising's outdoor workspace with produce laid out beside a truck"
+                  fill
+                  sizes="(max-width: 767px) 45vw, (max-width: 1023px) 44vw, (max-width: 1335px) 21vw, 267px"
+                  className="scale-[1.03] object-cover object-[50%_65%]"
+                />
+              </div>
+              <div className="relative overflow-hidden bg-forest/10">
+                <Image
+                  src="/images/workplace2.webp"
+                  alt="Produce sacks and a loaded truck at Hoperising's workspace"
+                  fill
+                  sizes="(max-width: 767px) 45vw, (max-width: 1023px) 44vw, (max-width: 1335px) 21vw, 267px"
+                  className="origin-bottom scale-[1.6] object-cover object-bottom"
+                />
+              </div>
             </div>
           </figure>
         </div>

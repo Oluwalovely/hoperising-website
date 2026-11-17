@@ -4,7 +4,7 @@ import { commodities, commoditySection, company } from "@/content/company";
 import { Reveal } from "./reveal";
 
 export function Commodities() {
-  const [cashew, soya, cocoa, otherProduce] = commodities;
+  const [cashew, soya, cocoa, sesame, otherProduce] = commodities;
 
   return (
     <section
@@ -24,17 +24,36 @@ export function Commodities() {
         </p>
       </Reveal>
 
-      <div className="mt-10 grid gap-9 md:grid-cols-2 md:gap-8 lg:mt-12 lg:grid-cols-3 lg:gap-10">
-        {[cashew, soya, cocoa].map((commodity) => (
+      <div className="mt-10 grid gap-9 md:grid-cols-2 md:gap-8 lg:mt-12 xl:grid-cols-4">
+        {[cashew, soya, cocoa, sesame].map((commodity) => (
           <article key={commodity.name} className="flex flex-col items-start">
             <div className="relative aspect-[4/3] w-full shrink-0 overflow-hidden bg-forest/10">
-              <Image
-                src={commodity.image}
-                alt={commodity.imageAlt}
-                fill
-                sizes="(max-width: 767px) calc(100vw - 40px), (max-width: 1023px) 45vw, (max-width: 1335px) 30vw, 387px"
-                className="object-cover"
-              />
+              <div
+                className={`absolute inset-0 ${"supportingImage" in commodity ? "grid grid-cols-[1.25fr_1fr] gap-1" : ""}`}
+              >
+                <div className="relative h-full">
+                  <Image
+                    src={commodity.image}
+                    alt={commodity.imageAlt}
+                    fill
+                    sizes={"supportingImage" in commodity
+                      ? "(max-width: 767px) 52vw, (max-width: 1279px) 25vw, 159px"
+                      : "(max-width: 767px) calc(100vw - 40px), (max-width: 1279px) 45vw, (max-width: 1335px) 22vw, 286px"}
+                    className="object-cover"
+                  />
+                </div>
+                {"supportingImage" in commodity && (
+                  <div className="relative h-full">
+                    <Image
+                      src={commodity.supportingImage}
+                      alt={commodity.supportingImageAlt}
+                      fill
+                      sizes="(max-width: 767px) 42vw, (max-width: 1279px) 20vw, 127px"
+                      className="object-cover"
+                    />
+                  </div>
+                )}
+              </div>
             </div>
             <h3 className="mt-6 text-[25px] tracking-[-0.025em] text-forest sm:text-[28px]">
               {commodity.name}

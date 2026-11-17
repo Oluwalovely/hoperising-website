@@ -5,7 +5,6 @@ import { Services } from "@/components/services";
 import { Commodities } from "@/components/commodities";
 import { TradingApproach } from "@/components/trading-approach";
 import { MissionVision } from "@/components/mission-vision";
-import { CorporateInfo } from "@/components/corporate-info";
 import { Contact } from "@/components/contact";
 import { Footer } from "@/components/footer";
 
@@ -22,7 +21,6 @@ export default function Home() {
         <Commodities />
         <TradingApproach />
         <MissionVision />
-        <CorporateInfo />
         <Contact />
       </main>
       <Footer />
